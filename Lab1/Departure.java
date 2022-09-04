@@ -26,7 +26,7 @@ class Departure extends Event {
    */
   @Override
   public String toString() {
-    return super.toString() + String.format(": Customer %d departed", this.customer.getId());
+    return super.toString() + String.format(": %s departed", this.customer.toString());
   }
 
   /**

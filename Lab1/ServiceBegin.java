@@ -33,8 +33,8 @@ class ServiceBegin extends Event {
   @Override
   public String toString() {
     return super.toString() 
-        + String.format(": Customer %d service begin (by Counter %d)"
-            , this.customer.getId(), this.sCounter.getId());
+        + String.format(": %s service begin (by %s)"
+            , this.customer.toString(), this.sCounter.toString());
   }
 
   /**

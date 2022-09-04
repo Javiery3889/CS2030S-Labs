@@ -48,4 +48,14 @@ class Customer {
   public double getServiceTime() {
     return this.serviceTime;
   }
+
+  /**
+   * Returns string representation of Customer with corresponding id
+   *
+   * @return A string containing id of the customer
+   */
+  @Override
+  public String toString() {
+    return String.format("Customer %d", this.getId());
+  }
 }

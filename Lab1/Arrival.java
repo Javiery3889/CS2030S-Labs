@@ -33,7 +33,7 @@ class Arrival extends Event {
    */
   @Override
   public String toString() {
-    return super.toString() + String.format(": Customer %d arrives", this.customer.getId());
+    return super.toString() + String.format(": %s arrives", this.customer.toString());
   }
   
   /**

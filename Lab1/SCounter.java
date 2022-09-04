@@ -55,4 +55,14 @@ class SCounter {
   public void setAvailability(boolean isAvailable) {
     this.isAvailable = isAvailable;
   }
+
+  /**
+   * Returns string representation of service counter with corresponding id
+   *
+   * @return A string containing id of the service counter
+   */
+  @Override
+  public String toString() {
+    return String.format("Counter %d", this.getId());
+  }
 }

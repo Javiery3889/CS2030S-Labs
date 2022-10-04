@@ -2,11 +2,15 @@
  * The Applicable interface that can probably
  * transform if given something that is
  * probably an Immutator.
- *
+ * <p>
  * Contains a single abstract method apply.
+ * </p>
  *
- * CS2030S Lab 4
- * AY22/23 Semester 1
+ * @version CS2030S Lab 4 AY22/23 Semester 1
  *
- * @author Put Your Name (Lab Group)
+ * @author Javier Yong (Lab Group 12B)
  */
+interface Applicable<T> {
+  // {@code Probably<Immutator<R,T>>} produces a {@code Probably<R>} type object. 
+  <R> Probably<R> apply(Probably<? extends Immutator<? extends R, ? super T>> p);
+}

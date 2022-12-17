@@ -1,36 +1,31 @@
-/**
- * CS2030S PE1 Question 1
- * AY22/23 Semester 1
- *
- * @author A0000000X
- */
 class CandyBag extends Candy {
-  private int numOfCandy;
-  private int counter;
+  private int candyCount;
+  private int weight;
+  private int remainder;
 
-  public CandyBag(int numOfCandy, int weight) {
-    super(weight);
-    this.numOfCandy = numOfCandy;
-    this.counter = numOfCandy;
-  }
-
-  @Override
-  public void eat() {
-    if (this.counter > 0) {
-      this.counter--;
-      if (this.counter == 0) {
-        this.setEaten();
-      }
-    }
+  public CandyBag(int candyCount, int weight) {
+    this.candyCount = candyCount;
+    this.weight = weight;
+    this.remainder = candyCount;
   }
 
   @Override
   public int getWeight() {
-    return this.counter * super.getWeight();
+    return this.remainder * this.weight;
   }
 
   @Override
+  public void eat() {
+    if (this.remainder > 0 && !this.isEaten()) {
+      this.remainder--;
+      if (this.remainder == 0) {
+        super.eat();
+      }
+    }
+  }
+  
+  @Override
   public String toString() {
-    return String.format("CandyBag %d/%d (%d gram)", this.counter, this.numOfCandy, this.getWeight());
+    return String.format("CandyBag %d/%d (%d gram)", this.remainder, this.candyCount, this.getWeight());
   }
 }

@@ -1,2 +1,32 @@
 # CS2030S
 NUS Programming Methodology II
+## Topics Covered
+- Java Basics
+  - Static Methods & Fields
+  - Method Overriding
+  - Method Overloading
+  - Abstract Classes
+  - Interface
+  - Java Exceptions
+- OOP Concepts
+  - Inheritance
+  - Composition
+  - Polymorphism
+  - LSP (part of [SOLID](https://en.wikipedia.org/wiki/SOLID) principles)
+- Java Generics and Wildcards
+  - Variance
+  - Type Inference
+- Functional Style Programming
+  - Immutability
+  - Nested Classes
+  - Pure Functions
+  - Lambda Expressions and Currying
+  - Lazy Evaluation and Memoization
+  - Infinite Lists
+  - Java Streams
+  - Monads and Functors
+- Parallel Computing
+  - Parallel Streams
+  - Java Thread Execution
+  - CompletableFuture Monad
+  - Fork-Join Model (Divide-And-Conquer Model)
